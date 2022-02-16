@@ -13,6 +13,12 @@ enum ValueType{
     DBL,
 };
 
+
+/*
+An unified class for different base types
+The inner type of a Value is determined by the Constructor
+When operatinng on two Values, their types must be the same
+*/
 class Value{
 public:
     explicit Value(int i):int_(i),type(INT){}
@@ -73,6 +79,9 @@ private:
     ValueType type;
 };
 
+/*
+Represents an varying value.
+*/
 class VarValue{
 public:
     VarValue(const VarValue& ano);
