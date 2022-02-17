@@ -183,6 +183,7 @@ void Expression::simplify(){
                 break;
             case COS:
                 result = cos(oper.getMinimum().convertToDouble());
+                break;
             default:
                 assert(0);
                 break;
